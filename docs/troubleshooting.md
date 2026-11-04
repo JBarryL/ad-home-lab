@@ -9,8 +9,8 @@ Tähän kirjaan asiat, jotka menivät pieleen, ja miten ne korjattiin.
 **Mitä tapahtui:** Yritin lähettää repon GitHubiin komennolla `git push`, mutta sain virheen
 "Internal Server Error".
 
-**Miksi:** Vika ei ollut omassa päässä, vaan GitHubissa. Heillä oli häiriö juuri sillä hetkellä.
-Sen näki sivulta githubstatus.com.
+**Miksi:** Vika ei ollut omassa päässä, vaan GitHubissa. 
+Sen näki sivulta githubstatus.com. `git push` myöähemmäksi.
 
 **Miten korjasin:** Odotin, että GitHub sai vian korjattua ja yritin sitten uudelleen.
 Työt olivat koko ajan tallessa omalla koneellani.
