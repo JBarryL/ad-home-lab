@@ -11,17 +11,17 @@ eivätkä ne näe toisiaan. NAT Networkissa ne ovat samassa verkossa ja pääsev
 ## DC01 (palvelin)
 
 * Windows Server 2025 Evaluation (Desktop Experience)
-* 4 GB RAM, 1 CPU (alun perin 2, katso troubleshooting.md), EFI, 64 GB levy
+* 4 GB RAM, 1 CPU (alun perin 2), EFI, 64 GB levy
 * Verkko: Adapter 1 → NAT Network (LabNet)
 * Automaattinen asennus ohitettu, jotta asennan Windowsin itse
 
 ## CLIENT01 (työasema)
 
 * Windows 11 Enterprise Evaluation
-* 4 GB RAM, 2 CPU, EFI, Secure Boot, TPM 2.0, 64 GB levy
+* 4 GB RAM, 1 CPU (alun perin 2). EFI, Secure Boot, TPM 2.0, 64 GB levy
 * Verkko: Adapter 1 → NAT Network (LabNet)
 * Huom: VirtualBox 7.2:ssa kohta on nimeltään "Proceed with Unattended Installation".
 Jätin sen valitsematta.
 * Unohdin ensin vaihtaa verkon NAT → NAT Network. Huomasin sen tarkistuksessa ja korjasin.
-* Vaihdoin prosessorin kahdesta yhteen etukäteen, että ei tarvitse huolehtia käynnistymisongelmasta, mitä tapahtui DC01-palvelimen kanssa. 
+* Vaihdoin prosessorin kahdesta yhteen etukäteen, että ei tarvitse huolehtia käynnistymisongelmasta, mitä tapahtui DC01-palvelimen kanssa.
 
