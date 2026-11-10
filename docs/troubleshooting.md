@@ -75,3 +75,26 @@ Lisäksi Memory Integrity takaisin päälle Windows-suojauksesta.
 
 **Mitä opin:** Jos korjaus ei toimi, kannattaa tarkistaa, mikä oikeasti on päällä, eikä vain olettaa.
 Lisäksi ensimmäinen "kikka" (yksi prosessori) kiersi ongelman, mutta ei korjannut sitä.
+
+---
+
+## 10.11.2026: Unohdin testikäyttäjän salasanan
+
+**Mitä tapahtui:** Yritin kirjautua CLIENT01:lle käyttäjällä `JUHALAB\euotila`, mutta en
+muistanut enää Eemelin salasanaa, jonka annoin käyttäjää luodessa.
+
+**Miksi:** Ihan vaan unohdin sen. Salasanaa ei voi katsoa mistään, edes adminina, koska AD
+ei tallenna salasanoja selväkielisinä.
+
+**Miten korjasin:** Nollasin salasanan DC01:llä:
+
+1. Active Directory Users and Computers → JuhaLab → Users → IT
+2. Eemeli Uotila → oikea klikkaus → **Reset Password...**
+3. Uusi salasana kahteen kertaan ja OK
+
+Sen jälkeen kirjautuminen CLIENT01:lle onnistui uudella salasanalla.
+
+**Mitä opin:** Salasanan nollaus on yksi helpdeskin yleisimmistä tehtävistä. Oikeassa työssä
+valitaan aina "User must change password at next logon", jotta vain käyttäjä itse tietää
+salasanansa. Jos tili lukittuu liian monesta väärästä yrityksestä, saman ikkunan
+"Unlock the user's account" -valinnalla tilin saa auki.
