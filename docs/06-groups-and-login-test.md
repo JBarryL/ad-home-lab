@@ -24,7 +24,7 @@ Tavallisin valinta käyttäjäryhmille. Domain local ja Universal tulevat vastaa
 Käyttäjät lisäsin ryhmään näin: ryhmä auki → Members → Add... → tunnus → Check Names → OK.
 Jäsenyyden näkee myös käyttäjän puolelta Member Of -välilehdeltä.
 
-![GRP-IT:n jäsenet](../screenshots/18-group-members.png)
+![GRP-IT:n jäsenet](../screenshots/18-group-members-IT.png)
 
 ## Kirjautumistesti CLIENT01:llä
 
