@@ -23,12 +23,16 @@ juhalab.internal
 Tein sen näin: Server Manager → Tools → Active Directory Users and Computers → hiiren oikea → New → Organizational Unit.
 "Protect container from accidental deletion" jäi päälle, ettei kansiota voi poistaa vahingossa.
 
+![OU-rakenne](../screenshots/15-ou-structure.png)
+
 ## Käyttäjät
 
 | Nimi | Tunnus | OU |
 |---|---|---|
 | Eemeli Uotila | euotila | IT |
 | Arttu Mäkelä | amakela | Management |
+
+![Käyttäjät luotu](../screenshots/16-users-created.png)
 
 Labrassa otin pois "User must change password at next logon" -valinnan. Oikeassa yrityksessä se pidetään päällä,
 jotta vain käyttäjä itse tietää salasanansa.

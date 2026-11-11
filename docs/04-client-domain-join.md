@@ -28,6 +28,8 @@ Testit:
 - `ipconfig /all`: IP DHCP:ltä (väliltä .100–.200), DNS 10.0.2.10
 - `nslookup juhalab.internal` → 10.0.2.10
 
+![CLIENT01:n DNS](../screenshots/12-client01-dns.png)
+
 Tämä on se tärkein kohta: jos clientin DNS osoittaa muualle (esim. reitittimeen tai Googleen),
 se ei löydä domainia, eikä domainiin liittyminen onnistu.
 
@@ -41,6 +43,8 @@ Settings → System → About → Domain or workgroup → Change...
 
 Uudelleenkäynnistyksen jälkeen kirjauduin **Other user** -kohdasta tunnuksella `JUHALAB\Administrator`.
 Eli sama tunnus toimii nyt sekä serverillä että clientilla. Tämä on koko AD:n idea.
+
+![CLIENT01 liitetty domainiin](../screenshots/13-client01-joined.png)
 
 Sekoilin hetken, koska vaihdoin ensin koneen nimen ja yritin liittää domainiin ennen
 uudelleenkäynnistystä. Kannattaa tehdä nimi ja domain samalla kertaa samassa ikkunassa,

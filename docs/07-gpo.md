@@ -165,9 +165,6 @@ Lukon avauksesta jäi 4767. Siinä näkyy, kuka avasi (JUHALAB\Administrator) ja
 
 ![Event 4767](../screenshots/31-event-4767.png)
 
-SOC-analyytikot seuraavat juuri näitä tapahtumia, kun he etsivät brute force -hyökkäyksiä.
-Tapahtumasta näkee, mikä tili lukittui ja miltä koneelta yritykset tulivat.
-
 **Locked vs. disabled:** locked aukeaa itsestään (15 min) tai `Unlock-ADAccount`-komennolla,
 disabled vain adminin `Enable-ADAccount`-komennolla.
 

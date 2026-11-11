@@ -5,13 +5,22 @@ Tein 5.11.2026.
 ## Mitä tein
 
 1. **Testasin serverin netin:** `ipconfig`, `ping 10.0.2.1` ja `ping google.com` menivät läpi.
+
+   ![Verkkotesti](../screenshots/07-dc01-network-test.png)
+
 2. **Asensin AD DS -roolin** (Server Manager → Manage → Add Roles and Features).
    Rooli tekee palvelimesta valmiin domain controlleriksi, mutta ei vielä luo domainia.
+
+   ![AD DS asennettu](../screenshots/08-adds-installed.png)
+
 3. **Promotoin DC01:n domain controlleriksi:**
    - Uusi forest, domain `juhalab.internal`, NetBIOS-nimi `JUHALAB`
    - DNS-palvelin ja Global Catalog asentuivat samalla
    - DSRM-salasana on varasalasana palvelimen korjaustilaan
    - Keltaiset varoitukset (esim. DNS delegation) ovat labrassa normaaleja
+
+   ![Promotoinnin yhteenveto](../screenshots/09-promote-review.png)
+
 4. Uudelleenkäynnistyksen jälkeen kirjauduin domain-tunnuksella `JUHALAB\Administrator`.
 
 ## Miten tarkistin, että domain toimii
@@ -22,6 +31,8 @@ Tein 5.11.2026.
 | `Get-ADDomainController` | DC01 on domain controller | DC01, 10.0.2.10, Global Catalog: True |
 | `nslookup -type=SRV _ldap._tcp.dc._msdcs.juhalab.internal` | Domain controller löytyy DNS:n kautta | dc01.juhalab.internal |
 | `ping google.com` | Netti toimii yhä | OK |
+
+![Domain tarkistettu](../screenshots/10-domain-verified.png)
 
 ## Miksi DNS on tärkeä AD:ssa
 

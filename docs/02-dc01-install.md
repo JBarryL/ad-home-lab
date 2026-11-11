@@ -4,11 +4,15 @@ Tein 4.11.2026.
 
 ## Asennus
 
+![DC01 valmiina asennukseen](../screenshots/05-dc01-ready-to-install.png)
+
 - Asensin Windows Server 2025 Standard Evaluation (Desktop Experience) -version.
   "Desktop Experience" tarkoittaa, että mukana on graafinen käyttöliittymä. Ilman sitä kaikki tehtäisiin komentoriviltä.
 - Kieli English (US), mutta näppäimistö Finnish, jotta salasanan merkit menevät oikein.
 - Asennus kesti noin tunnin, koska VirtualBox toimii koneellani Hyper-V:n kautta ja yhdellä prosessorilla.
 - Diagnostiikkadata: valitsin vain pakolliset tiedot.
+
+![Server Manager asennuksen jälkeen](../screenshots/06-server-manager.png)
 
 ## Asetukset asennuksen jälkeen
 
