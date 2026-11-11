@@ -10,7 +10,7 @@ Tähän kirjaan asiat, jotka menivät pieleen, ja miten ne korjattiin.
 "Internal Server Error".
 
 **Miksi:** Vika ei ollut omassa päässä, vaan GitHubissa. 
-Sen näki sivulta githubstatus.com. `git push` myöähemmäksi.
+Sen näki sivulta githubstatus.com. `git push` myöhemmäksi.
 
 **Miten korjasin:** Odotin, että GitHub sai vian korjattua ja yritin sitten uudelleen.
 Työt olivat koko ajan tallessa omalla koneellani.

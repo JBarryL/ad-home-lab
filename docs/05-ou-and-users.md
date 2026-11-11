@@ -44,7 +44,27 @@ Get-ADUser -Filter * -SearchBase "OU=Users,OU=JuhaLab,DC=juhalab,DC=internal"
 ```
 
 **DistinguishedName** on käyttäjän koko osoite AD:ssa, esim.
-`CN=Eemeli Uotila,OU=IT,OU=Users,OU=JuhaLab,DC=juhalab,DC=internal`. Se luetaan oikealta vasemmalle.
+`CN=Eemeli Uotila,OU=IT,OU=Users,OU=JuhaLab,DC=juhalab,DC=internal`. Se luetaan oikealta vasemmalle,
+vähän niinku postiosoite väärin päin: laajin on oikealla ja tarkin vasemmalla.
+
+Oikealta luettuna polku menee näin:
+
+1. `DC=internal`, `DC=juhalab` → domain `juhalab.internal`
+2. `OU=JuhaLab` → sen sisällä kansio JuhaLab
+3. `OU=Users` → sen sisällä Users
+4. `OU=IT` → sen sisällä IT
+5. `CN=Eemeli Uotila` → ja siellä tämä käyttäjä
+
+Se vastaa siis täsmälleen sitä kansiorakennetta, jonka näkee **Active Directory Users and Computers** -ikkunassa:
+JuhaLab → Users → IT → Eemeli Uotila.
+
+Lyhenteet:
+
+- **DC** = Domain Component (domainin nimen osa)
+- **OU** = Organizational Unit (kansio)
+- **CN** = Common Name (itse objekti, esim. käyttäjä tai ryhmä)
+
+Samaa muotoa käytetään PowerShellissä, esim. yllä `-SearchBase` ja bulk-skriptin `-Path` ([luku 08](08-powershell-bulk-users.md)).
 
 Kirjautua voi kahdella tavalla: `JUHALAB\euotila` tai `euotila@juhalab.internal`.
 
