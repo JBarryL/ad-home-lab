@@ -5,7 +5,7 @@ Tein 5.11.2026.
 ## Windows 11:n asennus
 
 - Windows 11 Enterprise Evaluation, kieli English (US), näppäimistö Finnish
-- Asennuksen alussa Windows valitti, että prosessoreita pitää olla vähintään kaksi.
+- Asennuksen alussa Windows ilmoitti, että prosessoreita pitää olla vähintään kaksi.
   Kahdella prosessorilla tuli taas musta ruutu, joten jouduin kytkemään Windowsin hypervisorin
   pois omalta koneeltani (katso troubleshooting.md).
 - Aloitusruuduissa valitsin **Sign-in options → Domain join instead**, jotta koneelle tuli
@@ -30,7 +30,7 @@ Testit:
 
 ![CLIENT01:n DNS](../screenshots/12-client01-dns.png)
 
-Tämä on se tärkein kohta: jos clientin DNS osoittaa muualle (esim. reitittimeen tai Googleen),
+Tämä on tärkein kohta: jos clientin DNS osoittaa muualle (esim. reitittimeen tai Googleen),
 se ei löydä domainia, eikä domainiin liittyminen onnistu.
 
 ## Domainiin liittyminen

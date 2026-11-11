@@ -40,7 +40,7 @@ DNS ei pelkästään muuta nimiä IP-osoitteiksi. AD:ssa se toimii myös "puheli
 josta koneet etsivät domain controllerin (SRV-tietueet). Siksi clientin DNS:n pitää osoittaa
 DC:hen, muuten domainiin liittyminen ei onnistu.
 
-## Pikkujuttuja
+## Huomioita
 
 - Pystyviiva `|` suomalaisella näppäimistöllä: AltGr + < (Z:n vieressä oleva näppäin).
 - nslookup näyttää "Server: UnKnown". Se on normaalia, koska DNS:ssä ei ole vielä

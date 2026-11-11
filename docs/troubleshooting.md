@@ -10,7 +10,7 @@ Tähän kirjaan asiat, jotka menivät pieleen, ja miten ne korjattiin.
 "Internal Server Error".
 
 **Miksi:** Vika ei ollut omassa päässä, vaan GitHubissa. 
-Sen näki sivulta githubstatus.com. `git push` myöhemmäksi.
+Sen näki sivulta githubstatus.com.
 
 **Miten korjasin:** Odotin, että GitHub sai vian korjattua ja yritin sitten uudelleen.
 Työt olivat koko ajan tallessa omalla koneellani.
@@ -44,7 +44,7 @@ two or more cores". Windows 11 vaatii vähintään kaksi prosessoria, mutta kahd
 VM jäi samalle mustalle ruudulle kuin DC01. Edellinen kikka (yksi prosessori) ei siis enää käynyt.
 
 **Miksi:** Prosessorin virtualisointiominaisuutta (VT-x) voi käyttää vain yksi ohjelma kerrallaan.
-Koneellani Windows piti sitä varattuna kolmelle omalle jutulleen, joten VirtualBox joutui
+Koneellani Windows piti sitä varattuna kolmelle omalle ominaisuudelleen, joten VirtualBox joutui
 kulkemaan Windowsin kautta. Siitä tuli ongelmia.
 
 **Miten korjasin:** Kytkin pois päältä kolme asiaa ja käynnistin koneen uudelleen:
@@ -59,7 +59,7 @@ kulkemaan Windowsin kautta. Siitä tuli ongelmia.
 
 Ensimmäinen yritys (kohdat 1 ja 2) ei riittänyt, koska hypervisori käynnistyi silti. Tarkistuksessa
 selvisi, että VBS oli yhä päällä rekisterissä. Kun kytkin senkin ja Virtual Machine Platformin pois,
-homma toimi. Nyt VBox-lokissa lukee "VT-x", eikä enää "fall back to NEM", ja VM:t käynnistyvät
+korjaus toimi. Nyt VBox-lokissa lukee "VT-x", eikä enää "fall back to NEM", ja VM:t käynnistyvät
 kahdella prosessorilla ja paljon nopeammin.
 
 **Mitä se maksoi:** Koneestani puuttuu nyt yksi tietoturvakerros (ytimen eristys). Defender,
@@ -74,7 +74,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 Lisäksi Memory Integrity takaisin päälle Windows-suojauksesta.
 
 **Mitä opin:** Jos korjaus ei toimi, kannattaa tarkistaa, mikä oikeasti on päällä, eikä vain olettaa.
-Lisäksi ensimmäinen "kikka" (yksi prosessori) kiersi ongelman, mutta ei korjannut sitä.
+Lisäksi ensimmäinen kiertotie (yksi prosessori) kiersi ongelman, mutta ei korjannut sitä.
 
 ---
 
@@ -83,7 +83,7 @@ Lisäksi ensimmäinen "kikka" (yksi prosessori) kiersi ongelman, mutta ei korjan
 **Mitä tapahtui:** Yritin kirjautua CLIENT01:lle käyttäjällä `JUHALAB\euotila`, mutta en
 muistanut enää Eemelin salasanaa, jonka annoin käyttäjää luodessa.
 
-**Miksi:** Ihan vaan unohdin sen. Salasanaa ei voi katsoa mistään, edes adminina, koska AD
+**Miksi:** Unohdin sen. Salasanaa ei voi katsoa mistään, edes adminina, koska AD
 ei tallenna salasanoja selväkielisinä.
 
 **Miten korjasin:** Nollasin salasanan DC01:llä:

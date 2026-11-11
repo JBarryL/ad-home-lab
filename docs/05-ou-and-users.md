@@ -44,8 +44,8 @@ Get-ADUser -Filter * -SearchBase "OU=Users,OU=JuhaLab,DC=juhalab,DC=internal"
 ```
 
 **DistinguishedName** on käyttäjän koko osoite AD:ssa, esim.
-`CN=Eemeli Uotila,OU=IT,OU=Users,OU=JuhaLab,DC=juhalab,DC=internal`. Se luetaan oikealta vasemmalle,
-vähän niinku postiosoite väärin päin: laajin on oikealla ja tarkin vasemmalla.
+`CN=Eemeli Uotila,OU=IT,OU=Users,OU=JuhaLab,DC=juhalab,DC=internal`. Se luetaan oikealta vasemmalle:
+laajin osa (domain) on oikealla ja tarkin (käyttäjä) vasemmalla.
 
 Oikealta luettuna polku menee näin:
 

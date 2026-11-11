@@ -3,7 +3,7 @@
 Tein 10.11.2026.
 
 GPO (Group Policy Object) on joukko asetuksia, jotka DC jakaa keskitetysti koneille ja käyttäjille.
-Asetuksia ei siis tarvitse säätää jokaisella koneella erikseen. GPO tehdään ja linkitetään
+Asetuksia ei siis tarvitse määrittää jokaisella koneella erikseen. GPO tehdään ja linkitetään
 **Group Policy Managementissa** (Server Manager → Tools → Group Policy Management).
 
 Tein kaksi GPO:ta:
@@ -57,7 +57,7 @@ GPO-User-Wallpaper, ja se tuli DC01.juhalab.internalilta.
 
 ## GPO 2: Salasanakäytäntö
 
-### Tärkein juttu: linkitys domainin juureen
+### Tärkeintä: linkitys domainin juureen
 
 Domain-käyttäjien salasanakäytäntö toimii **vain domainin juureen linkitetystä GPO:sta**.
 Jos sen linkittää OU:hun, se ei vaikuta domain-tileihin. (Jos eri ryhmille tarvitaan eri

@@ -50,7 +50,7 @@ Skriptin osat:
   koska skripti on julkisesti GitHubissa. `-AsSecureString` piilottaa kirjoitetut merkit.
 - `foreach`-silmukka käy CSV:n rivit läpi yksi kerrallaan. `$u` on vuorossa oleva käyttäjä ja
   `$u.Department` sen Department-sarake.
-- `New-ADUser` luo käyttäjän. Sama asia kuin käsin ADUC:ssa, mutta ilman klikkailua.
+- `New-ADUser` luo käyttäjän. Sama asia kuin käsin ADUC:ssa, mutta komennolla.
   Rivien lopun takahipsu ` tarkoittaa, että komento jatkuu seuraavalla rivillä.
 
 Tärkeimmät New-ADUser-parametrit:
@@ -70,7 +70,7 @@ ks. [07 - GPO](07-gpo.md)), muuten New-ADUser antaa virheen.
 
 Ennen kuin skripti sai luoda mitään, laitoin silmukkaan pelkän `Write-Host`-rivin, joka vain
 tulostaa mihin OU:hun kukin käyttäjä menisi. Näin näki heti, että OU-polut ovat oikein, eikä
-AD:hen tullut sotkua, jos jokin oli pielessä.
+AD:hen syntynyt virheellisiä käyttäjiä, jos jokin oli pielessä.
 
 ```powershell
 foreach ($u in $users) {
