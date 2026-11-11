@@ -39,11 +39,8 @@ Import-Csv C:\Scripts\users.csv | Format-Table
 
 ## 2. Skripti PowerShell ISE:ssä
 
-**PowerShell ISE** (Integrated Scripting Environment) on Windowsin mukana tuleva editori
-PowerShell-skripteille. Ylhäällä on editori ja alhaalla PowerShell-konsoli, jossa tulokset näkyvät.
-Siinä on värikoodaus ja automaattinen täydennys, ja skriptin voi ajaa F5:llä. Microsoft suosittelee
-nykyään VS Codea, mutta ISE löytyy valmiina jokaisesta Windows Serveristä. Avasin sen
-järjestelmänvalvojana (hae `ise` → hiiren oikea → **Run as administrator**).
+Kirjoitin skriptin PowerShell ISE:ssä, joka sopii hyvin tällaiseen käyttäjien luontiin ja
+automatisointiin. Avasin sen järjestelmänvalvojana (hae `ise` → hiiren oikea → **Run as administrator**).
 
 Skriptin osat:
 
