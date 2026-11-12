@@ -94,7 +94,8 @@ ei tallenna salasanoja selväkielisinä.
 
 Sen jälkeen kirjautuminen CLIENT01:lle onnistui uudella salasanalla.
 
-**Mitä opin:** Salasanan nollaus on yksi helpdeskin yleisimmistä tehtävistä. Oikeassa työssä
+**Mitä opin:** Olen aiemmin vaihtanut salasanoja muuta kautta, mutta nyt oli hyvä tilaisuus
+oppia tekemään nollaus suoraan AD:ssa. Salasanan nollaus on yksi helpdeskin yleisimmistä tehtävistä. Oikeassa työssä
 valitaan aina "User must change password at next logon", jotta vain käyttäjä itse tietää
 salasanansa. Jos tili lukittuu liian monesta väärästä yrityksestä, saman ikkunan
 "Unlock the user's account" -valinnalla tilin saa auki.
