@@ -32,7 +32,7 @@ eikä domainiin liittyminen onnistu.
 - [x] [06 - Ryhmät ja kirjautumistesti](docs/06-groups-and-login-test.md)
 - [x] [07 - Ryhmäkäytännöt (GPO)](docs/07-gpo.md)
 - [x] [08 - Käyttäjien massaluonti PowerShellillä](docs/08-powershell-bulk-users.md)
-- [ ] DNS: forwarder ja reverse lookup zone
+- [x] [09 - DNS: forwarder ja reverse lookup zone](docs/09-dns-forwarder-reverse-zone.md)
 
 Ongelmat ja niiden ratkaisut: [troubleshooting.md](docs/troubleshooting.md)
 
