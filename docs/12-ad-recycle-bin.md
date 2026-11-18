@@ -12,7 +12,7 @@ Vanhat kansio-oikeudet eivät silloin toimi, ja ryhmät pitää lisätä käsin 
 
 **Tärkeää tietää:** Recycle Bin on oletuksena pois päältä, eikä sitä saa enää pois, kun sen on
 kerran laittanut päälle. Siitä ei ole haittaa, ja Microsoft suosittelee sitä, mutta oikeassa
-ympäristössä tämä on hyvä tietää ennen kuin painaa nappia.
+ympäristössä tämä on hyvä tietää.
 
 Työkaluna oli uusi **Active Directory Administrative Center (ADAC)** (Server Manager → Tools).
 Sillä hallitaan samoja asioita kuin ADUC:lla, mutta siinä on lisäksi esim. roskakori.
@@ -84,5 +84,5 @@ Remove-ADGroupMember -Identity GRP-IT -Members vkoskinen -Confirm:$false
 
 - AD Recycle Bin on oletuksena pois päältä, eikä sitä saa pois, kun sen on kerran laittanut päälle.
 - Uudelleen luotu tili ei ole sama tili (uusi SID). Palautettu tili on, ja oikeudet ja ryhmät tulevat mukana.
-- ADAC:ssa on ominaisuuksia, joita ADUC:ssa ei ole, kuten Deleted Objects.
+- ADAC:ssa on ominaisuuksia, joita ADUC:ssa ei ole (kuten Deleted Objects.)
 - `Get-ADOptionalFeature` näyttää AD:n lisäominaisuuksien tilan.
