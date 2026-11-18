@@ -107,5 +107,5 @@ kun taas käsin jotain unohtuu helposti.
 
 - Kuivaharjoitus kannattaa aina ennen kuin skripti muuttaa mitään.
 - Salasanoja ei kirjoiteta skripteihin.
-- Uudelleenajo antaisi virheen, koska käyttäjät on jo olemassa. Jatkossa skriptiin voisi lisätä
-  tarkistuksen (`Get-ADUser`), joka ohittaa jo olemassa olevat käyttäjät.
+- Uudelleenajo antaisi virheen, koska käyttäjät on jo olemassa. Korjasin tämän myöhemmin, ks.
+  [13 - Bulk-skriptin parannus](13-bulk-script-improvements.md). Repossa oleva skripti on se parannettu versio.

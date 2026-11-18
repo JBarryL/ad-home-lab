@@ -36,6 +36,7 @@ eikä domainiin liittyminen onnistu.
 - [x] [10 - Jaettu kansio ja verkkoasema GPO:lla](docs/10-shared-folder-drive-map.md)
 - [x] [11 - Käyttäjän poistuminen (offboarding)](docs/11-offboarding.md)
 - [x] [12 - AD Recycle Bin: poistetun käyttäjän palautus](docs/12-ad-recycle-bin.md)
+- [x] [13 - Bulk-skriptin parannus: uudelleenajo ja virhetilanteet](docs/13-bulk-script-improvements.md)
 
 Ongelmat ja niiden ratkaisut: [troubleshooting.md](docs/troubleshooting.md)
 
