@@ -34,6 +34,7 @@ eikä domainiin liittyminen onnistu.
 - [x] [08 - Käyttäjien massaluonti PowerShellillä](docs/08-powershell-bulk-users.md)
 - [x] [09 - DNS: forwarder ja reverse lookup zone](docs/09-dns-forwarder-reverse-zone.md)
 - [x] [10 - Jaettu kansio ja verkkoasema GPO:lla](docs/10-shared-folder-drive-map.md)
+- [x] [11 - Käyttäjän poistuminen (offboarding)](docs/11-offboarding.md)
 
 Ongelmat ja niiden ratkaisut: [troubleshooting.md](docs/troubleshooting.md)
 
