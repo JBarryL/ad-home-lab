@@ -21,6 +21,8 @@ ylläpidossa tehdään oikeasti:
 - **Käyttäjän elinkaari PowerShellillä**: massaluonti CSV:stä ja offboarding-skripti
   (disable → ryhmät pois → siirto Disabled Users -OU:hun)
 - **Palautus**: AD Recycle Bin ja vahingossa poistetun käyttäjän palautus ryhmineen
+- **Hyökkääjän näkökulma (Kali Linux)**: verkon kartoitus (nmap), password spray ja
+  autentikoitu enumerointi (NetExec) – ja kovennusten testaaminen hyökkääjän päästä
 - **Vianetsintä**: mm. virtualisointiongelmat, DC:n kellon jättämä ja skriptien virhetilanteet.
   Kaikki on kirjattu [troubleshooting.md](docs/troubleshooting.md)-tiedostoon.
 
@@ -34,6 +36,7 @@ ylläpidossa tehdään oikeasti:
 |---|---|---|---|---|
 | DC01 | Windows Server 2025 (GUI) | 10.0.2.10 | 127.0.0.1 | 3 GB |
 | CLIENT01 | Windows 11 Enterprise | DHCP | 10.0.2.10 | 3 GB |
+| KALI01 | Kali Linux | 10.0.2.101 | - | 3 GB |
 
 DC01 on domainin DNS-palvelin, ja muut kyselyt välitetään forwardereille (Quad9: 9.9.9.9 ja 149.112.112.112).
 
@@ -80,13 +83,14 @@ juhalab.internal
 11. [Käyttäjän poistuminen (offboarding)](docs/11-offboarding.md)
 12. [AD Recycle Bin: poistetun käyttäjän palautus](docs/12-ad-recycle-bin.md)
 13. [Bulk-skriptin parannus: uudelleenajo ja virhetilanteet](docs/13-bulk-script-improvements.md)
+14. [Hyökkääjän näkökulma: recon ja enumerointi Kalilta](docs/14-kali-recon-enumeration.md)
 
 Ongelmat ja niiden ratkaisut: [troubleshooting.md](docs/troubleshooting.md)
 
 ## Seuraavaksi
 
-Labra jatkuu tietoturvan puolelle: lisään Kali Linuxin ja katson domainia hyökkääjän
-näkökulmasta.
+Jatkan hyökkääjän näkökulmasta: AD:n polkujen mallinnus BloodHoundilla ja löydösten pohjalta
+kovennusten viimeistely.
 
 ## Kansiot
 
