@@ -3,8 +3,10 @@
 > **In English:** A self-built Windows Server 2025 Active Directory lab in VirtualBox with a
 > domain-joined Windows 11 client. I set up the domain, DNS, OU structure, security groups, Group
 > Policies, a permission-controlled file share with a GPO drive map, user onboarding and offboarding
-> with PowerShell scripts, and AD Recycle Bin. Every step is documented (in Finnish) with screenshots,
-> including the problems I ran into and how I solved them.
+> with PowerShell scripts, and AD Recycle Bin. I also tested the lab from an attacker's perspective
+> with Kali Linux (recon, password spraying, NetExec) and mapped attack paths with BloodHound/SharpHound.
+> Every step is documented (in Finnish) with screenshots, including the problems I ran into and how I
+> solved them.
 
 ## Mitä labrassa on tehty
 
@@ -23,6 +25,8 @@ ylläpidossa tehdään oikeasti:
 - **Palautus**: AD Recycle Bin ja vahingossa poistetun käyttäjän palautus ryhmineen
 - **Hyökkääjän näkökulma (Kali Linux)**: verkon kartoitus (nmap), password spray ja
   autentikoitu enumerointi (NetExec) – ja kovennusten testaaminen hyökkääjän päästä
+- **Hyökkäyspolut (BloodHound + SharpHound)**: AD:n suhteiden mallinnus graafina ja hyökkäyspolkujen
+  etsintä footholdista. Löydös: Domain Admin kirjautuneena työasemalle (credential-theft-riski)
 - **Vianetsintä**: mm. virtualisointiongelmat, DC:n kellon jättämä ja skriptien virhetilanteet.
   Kaikki on kirjattu [troubleshooting.md](docs/troubleshooting.md)-tiedostoon.
 
@@ -84,13 +88,14 @@ juhalab.internal
 12. [AD Recycle Bin: poistetun käyttäjän palautus](docs/12-ad-recycle-bin.md)
 13. [Bulk-skriptin parannus: uudelleenajo ja virhetilanteet](docs/13-bulk-script-improvements.md)
 14. [Hyökkääjän näkökulma: recon ja enumerointi Kalilta](docs/14-kali-recon-enumeration.md)
+15. [Hyökkäyspolut BloodHoundilla](docs/15-bloodhound-attack-paths.md)
 
 Ongelmat ja niiden ratkaisut: [troubleshooting.md](docs/troubleshooting.md)
 
 ## Seuraavaksi
 
-Jatkan hyökkääjän näkökulmasta: AD:n polkujen mallinnus BloodHoundilla ja löydösten pohjalta
-kovennusten viimeistely.
+BloodHound-löydösten pohjalta kovennusten viimeistely: Tier 0 -tilit pois työasemilta (tieraus) ja
+arkaluontoiset tiedot pois AD:n kuvauskentistä.
 
 ## Kansiot
 
